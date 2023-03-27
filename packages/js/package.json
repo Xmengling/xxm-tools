@@ -15,13 +15,7 @@
     "lib",
     "dist"
   ],
-  "publishConfig": {
-    "registry": "http://npm.leyopharm.com:28000/repository/npm-local/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "http://g.leyopharm.com:8070/leyo/web/athena.git"
-  },
+ 
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
