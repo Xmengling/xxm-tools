@@ -1,6 +1,6 @@
 {
   "name": "athena",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "leyo tools",
   "author": "leyowebteam <leyowebteam@leyopharm.com>",
   "homepage": "",
@@ -20,10 +20,10 @@
   },
   "scripts": {},
   "dependencies": {
-    "@athena/date": "^1.1.1",
-    "@athena/js": "^1.1.1",
-    "@athena/number": "^1.1.1",
-    "@athena/validate": "^1.1.1"
+    "@athena/date": "^1.1.2",
+    "@athena/js": "^1.1.2",
+    "@athena/number": "^1.1.2",
+    "@athena/validate": "^1.1.2"
   },
   "gitHead": "d2d8f29fd7ec9a961bfac2a261806d5c5b768048"
 }
