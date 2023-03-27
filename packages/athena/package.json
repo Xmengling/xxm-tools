@@ -15,6 +15,9 @@
     "lib",
     "dist"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {},
   "dependencies": {
     "@athena/date": "^1.1.1",
@@ -22,5 +25,5 @@
     "@athena/number": "^1.1.1",
     "@athena/validate": "^1.1.1"
   },
-  "gitHead": "53d4ea5ad4753c0eb436b882c3f6c331f7375fba"
+  "gitHead": "d2d8f29fd7ec9a961bfac2a261806d5c5b768048"
 }
