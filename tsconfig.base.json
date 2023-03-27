@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "lib": ["ES5", "ES6", "ES7", "ESNext", "DOM"],
+    "target": "ES5",
+    "sourceMap": true,
+    "moduleResolution": "node", // 解决路径问题，找不到顶层的node_modules下的模块
+    "declaration": true, // 将生成.d.ts文件
+    "declarationDir": "./dist/", // 声明文件打包的位置
+    "removeComments": true // 删除注释
+  }
+}

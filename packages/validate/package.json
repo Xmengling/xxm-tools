@@ -1,0 +1,29 @@
+{
+  "name": "@athena/validate",
+  "version": "1.1.0",
+  "description": "validate tools",
+  "author": "leyowebteam <leyowebteam@leyopharm.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "type": "commonjs",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "publishConfig": {
+    "registry": "http://npm.leyopharm.com:28000/repository/npm-local/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://g.leyopharm.com:8070/leyo/web/athena.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "gitHead": "53d4ea5ad4753c0eb436b882c3f6c331f7375fba"
+}

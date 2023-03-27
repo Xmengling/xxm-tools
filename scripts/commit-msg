@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# echo -e "\033[46;37mcommitlint\033[0m 正在执行ESLint检查..."
+# yarn ptcode && yarn lint:fix
+# if [ ! $? -eq 0 ];then
+#   echo -e "\033[46;37mcommitlint\033[0m \033[31mESLint检查不通过，请修改后重新提交\033[0m"
+# 	exit 1
+# fi
+# echo -e "\033[46;37mcommitlint\033[0m 检查完成"
+
+echo -e "\033[46;37mcommitlint\033[0m 正在检查提交日志..."
+./node_modules/.bin/commitlint --edit $1
+if [ ! $? -eq 0 ];then
+  echo -e "\033[46;37mcommitlint\033[0m \033[31m提交日志不符合规范，请检查后重新提交\033[0m"
+	exit 1
+fi
+echo -e "\033[46;37mcommitlint\033[0m 检查完成"
