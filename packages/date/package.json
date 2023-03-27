@@ -1,5 +1,5 @@
 {
-  "name": "@athena/date",
+  "name": "date-cml",
   "version": "1.1.3",
   "description": "date tools",
   "author": "leyowebteam <leyowebteam@leyopharm.com>",
@@ -21,7 +21,7 @@
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
-  "gitHead": "3bf96b7e99634616013b8bd6bf2b40bacf646878",
+  "gitHead": "77b286894f34e543d85d729b8998aaa494c0b87c",
   "dependencies": {
     "dayjs": "^1.10.7"
   }
