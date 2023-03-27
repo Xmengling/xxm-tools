@@ -1,6 +1,6 @@
 {
-  "name": "root",
-  "private": true,
+  "name": "tool-test-cml",
+  "version": "0.1.0",
   "workspaces": [
     "packages/*"
   ],

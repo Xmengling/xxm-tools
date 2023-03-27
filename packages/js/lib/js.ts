@@ -18,7 +18,7 @@ import getValueByPath from '../src/getValueByPath';
 import isEqual from '../src/isEqual';
 import uniq from '../src/uniq';
 import regexp from '../src/regexp';
-import { useCopy } from '../src/useCopy'
+import { useCopy } from '../src/useCopy';
 
 export {
   checkDataType,
@@ -41,7 +41,7 @@ export {
   isEqual,
   uniq,
   regexp,
-  useCopy
+  useCopy,
 };
 
 const js = {
@@ -65,6 +65,6 @@ const js = {
   isEqual,
   uniq,
   regexp,
-  useCopy
+  useCopy,
 };
 export default js;

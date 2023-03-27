@@ -21,7 +21,7 @@
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
-  "gitHead": "d2d8f29fd7ec9a961bfac2a261806d5c5b768048",
+  "gitHead": "3bf96b7e99634616013b8bd6bf2b40bacf646878",
   "dependencies": {
     "file-saver": "^2.0.5",
     "xlsx": "^0.18.5"
