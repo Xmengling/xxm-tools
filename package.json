@@ -1,5 +1,5 @@
 {
-  "name": "tool-test-cml",
+  "name": "hub-utils",
   "version": "0.1.0",
   "workspaces": [
     "packages/*"
