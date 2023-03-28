@@ -1,5 +1,5 @@
 {
-  "name": "@athena/js",
+  "name": "@hub-utils/js",
   "version": "1.1.4",
   "description": "js utils",
   "author": "leyowebteam <leyowebteam@leyopharm.com>",
@@ -21,7 +21,7 @@
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
-  "gitHead": "77b286894f34e543d85d729b8998aaa494c0b87c",
+  "gitHead": "8719e8627eb319a41a92f10c74859c55dc6b3783",
   "dependencies": {
     "file-saver": "^2.0.5",
     "xlsx": "^0.18.5"

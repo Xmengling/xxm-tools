@@ -8,7 +8,7 @@ import * as dayjs from 'dayjs';
  * @param {Object} params
  * @param {string} params timeType 时间类型
  * @param {string} [params.format='YYYY-MM-DD HH:mm:ss'] 选填，格式化模板，默认为YYYY-MM-DD HH:mm:ss
- * @returns {Array} 包含有开始时间和结束时间的数组123
+ * @returns {Array} 包含有开始时间和结束时间的数组1234
  */
 export function getTimeRange({
   timeType,
