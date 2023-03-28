@@ -1,5 +1,5 @@
 {
-  "name": "@hub-utils-cml/date",
+  "name": "@hub-utils/date",
   "version": "1.1.6",
   "description": "date tools",
   "author": "leyowebteam <leyowebteam@leyopharm.com>",
@@ -21,7 +21,7 @@
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
-  "gitHead": "4b670b6d7e24324879385c3c94de5f449841af04",
+  "gitHead": "eea25d6631e9249d3b54408ac9d5f5f39901721d",
   "dependencies": {
     "dayjs": "^1.10.7"
   }

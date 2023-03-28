@@ -1,5 +1,5 @@
 {
-  "name": "hub-utils-cml",
+  "name": "hub-utils",
   "version": "1.1.6",
   "description": "leyo tools",
   "author": "leyowebteam <leyowebteam@leyopharm.com>",
@@ -25,5 +25,5 @@
     "@athena/number": "^1.1.4",
     "@athena/validate": "^1.1.4"
   },
-  "gitHead": "4b670b6d7e24324879385c3c94de5f449841af04"
+  "gitHead": "eea25d6631e9249d3b54408ac9d5f5f39901721d"
 }
