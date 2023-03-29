@@ -20,10 +20,10 @@
   },
   "scripts": {},
   "dependencies": {
-    "@athena/date": "^1.1.3",
-    "@athena/js": "^1.1.4",
-    "@athena/number": "^1.1.4",
-    "@athena/validate": "^1.1.4"
+    "@hub-utils1/date": "^1.1.9",
+    "@hub-utils1/js": "^1.1.9",
+    "@hub-utils1/number": "^1.1.9",
+    "@hub-utils1/validate": "^1.1.9"
   },
   "gitHead": "1747c06fdcfec8151ecd098d2a1bc334733801ef"
 }
