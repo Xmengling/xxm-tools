@@ -1,7 +1,7 @@
 /**
  * @description 打开新标签页
- * @author 陈浩林
- * @date 01/12/2021
+ * @author XMengling
+ * @date 03/29/2023
  * @deport
  * @param {string|undefined} url 选填，新标签页的链接。为空则默认打开about:blank
  * @param {string|undefined} name 选填，新标签页的名称（非标题）。该字符串可以用来作为超链接 <a> 或表单 <form> 元素的目标属性值。字符串中不能含有空白字符
@@ -18,8 +18,8 @@ export function openNewTab(url: string, name: string, features: FEATURES) {
 
 /**
  * @description 将窗口特性对象转换为对应的字符串
- * @author 陈浩林
- * @date 01/12/2021
+ * @author XMengling
+ * @date 03/29/2023
  * @param {object} features 窗口特性对象
  * @returns {string} 窗口特性字符串
  */

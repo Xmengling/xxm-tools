@@ -1,6 +1,6 @@
 /**
  * @description 数字转成万单位
- * @author 程梦玲
+ * @author XMengling
  * @param {number} val
  * @return {string} val
  * @example

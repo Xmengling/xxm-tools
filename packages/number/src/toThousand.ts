@@ -1,6 +1,6 @@
 /**
  * @description 数字转化为千分位货币符号
- * @author 程梦玲
+ * @author XMengling
  * @param {number} val
  * @return {string} val
  * @example

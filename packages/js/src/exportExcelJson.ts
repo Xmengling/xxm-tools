@@ -1,7 +1,7 @@
 /**
  * @description 导出excel（json数据）
- * @author wuxingda
- * @date 29/11/2021
+ * @author XMengling
+ * @date 03/29/2023
  * @export
  * @param headerConfig 表头配置
  * @param dataList 表格数据

@@ -2,8 +2,8 @@ import * as dayjs from 'dayjs';
 
 /**
  * @description 获取时间范围
- * @author 陈浩林
- * @date 01/12/2021
+ * @author XMengling
+ * @date 03/29/2023
  * @deport
  * @param {Object} params
  * @param {string} params timeType 时间类型
@@ -37,8 +37,8 @@ export function getTimeRange({
 
 /**
  * @description 获取时间类型对应设置内容
- * @author 陈浩林
- * @date 01/12/2021
+ * @author XMengling
+ * @date 03/29/2023
  * @param {string} timeType 时间类型
  * @throws 当所传入时间类型不存在时会抛出错误
  * @returns {{unit, type, mutation, stride, preFormatUnit, noPreFormat }} 时间类型设置内容

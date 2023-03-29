@@ -4,8 +4,8 @@ import httpRequest from '../utils/httpRequest';
 
 /**
  * @description 导出excel（blob数据）
- * @author wuxingda
- * @date 29/11/2021
+ * @author XMengling
+ * @date 03/29/2023
  * @export
  * @param {object} config 配置对象
  * @param {string} config.url 接口地址

@@ -1,7 +1,7 @@
 /**
  * @description 复制内容
- * @author 程梦玲
- * @date 04/11/2022
+ * @author XMengling
+ * @date 03/29/2023
  * @deport
  * @param {string} text 文本
  * @returns boolean

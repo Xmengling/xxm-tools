@@ -3,8 +3,8 @@ import { isInvalidAccParam, precisionFormat } from '../utils/common';
 
 /**
  * @description 除法
- * @author wuxingda
- * @date 26/11/2021
+ * @author XMengling
+ * @date 03/29/2023
  * @export
  * @param {string | number} arg1 被除数
  * @param {string | number} arg2 除数

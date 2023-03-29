@@ -1,7 +1,7 @@
 /**
  * @description 元素滚动至顶部
- * @author 陈浩林
- * @date 01/12/2021
+ * @author XMengling
+ * @date 03/29/2023
  * @export
  * @param {object} config
  * @param {Document} config doc 文档对象

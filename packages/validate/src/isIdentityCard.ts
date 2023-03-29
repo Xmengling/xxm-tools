@@ -1,7 +1,7 @@
 /**
  * @description 校验是否是身份证号
- * @author yuanyingying
- * @date 24/11/2021
+ * @author XMengling
+ * @date 03/29/2023
  * @export
  * @param phone
  * @returns { boolean } 返回是否是身份证号

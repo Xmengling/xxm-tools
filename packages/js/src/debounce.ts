@@ -2,8 +2,8 @@ import { checkDataType } from './checkDataType';
 
 /**
  * @description
- * @author Zhixing Zheng
- * @date 29/11/2021
+ * @author XMengling
+ * @date 03/29/2023
  * @export
  * @param {COMMON_FUNCTION} func  需要防抖的函数
  * @param {number} delay 延迟

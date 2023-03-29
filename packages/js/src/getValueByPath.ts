@@ -4,8 +4,8 @@ import castPath from '../utils/castPath';
  * @description 检索`object`中路径为`path`的值；若无，则返回默认值`defaultValue`
  * @from lodash
  * @todo 该方法和相关方法，都是从lodash迁移过来的，做了一些数据兼容性的简化
- * @author 袁绍宏
- * @date 2021/11/30
+ * @author XMengling
+ * @date 03/29/2023
  * @param {Object} object 待检索的对象
  * @param {array | string} path 检索路径
  * @param {any} [defaultValue] 默认值

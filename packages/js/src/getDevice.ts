@@ -1,7 +1,7 @@
 /**
  * @description 获取device类型
- * @author wuxingda
- * @date 29/11/2021
+ * @author XMengling
+ * @date 03/29/2023
  * @export
  * @returns {string} 类型字符串
  */

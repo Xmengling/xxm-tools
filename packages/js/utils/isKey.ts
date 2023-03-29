@@ -8,8 +8,8 @@ const reIsPlainProp = /^\w*$/;
 /**
  * @description 校验`value`是一个有效的对象属性名
  * @from lodash
- * @author 袁绍宏
- * @date 2021/11/30
+ * @author XMengling
+ * @date 03/29/2023
  * @param {*} value 待校验的值
  * @param {object} [object] 待查询的对象
  * @returns {boolean} 是否一个有效的对象属性名

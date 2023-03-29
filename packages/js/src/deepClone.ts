@@ -2,8 +2,8 @@ import { checkDataType } from './checkDataType';
 
 /**
  * @description 深拷贝
- * @author wuxingda
- * @date 25/11/2021
+ * @author XMengling
+ * @date 03/29/2023
  * @export
  * @template T
  * @param originData 要进行深拷贝的数据

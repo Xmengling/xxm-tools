@@ -5,8 +5,8 @@ function checkDataType<T>(data: T, checkType: string): boolean;
 
 /**
  * @description 判断或获取数据类型
- * @author wuxingda
- * @date 24/11/2021
+ * @author XMengling
+ * @date 03/29/2023
  * @export
  * @param { any } data 要进行判断的数据必传
  * @param { string } checkType 指定判断的数据类型，若不传则为获取数据类型

@@ -1,6 +1,6 @@
 /**
  * @description 数字转成中文汉字
- * @author 程梦玲
+ * @author XMengling
  * @param {number} val
  * @return {string} val
  * @example

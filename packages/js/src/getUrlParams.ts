@@ -2,8 +2,8 @@ import { checkDataType } from './checkDataType';
 
 /**
  * @description
- * @author Zhixing Zheng
- * @date 29/11/2021
+ * @author XMengling
+ * @date 03/29/2023
  * @export
  * @param {url} 需要处理的url字符串
  * @returns {URL_RESULT} 从url里提取出来的queryString键值对

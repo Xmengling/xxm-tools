@@ -3,8 +3,8 @@ import isEqual from './isEqual';
 
 /**
  * @description 数组去重
- * @author 袁绍宏
- * @date 2021/11/30
+ * @author XMengling
+ * @date 03/29/2023
  * @param {any[]} source 源数组
  * @param {string} [key] 指定比对的字段，针对`object`类型
  * @return {any[]} 去重后的新数组

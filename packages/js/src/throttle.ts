@@ -2,8 +2,8 @@ import { checkDataType } from './checkDataType';
 
 /**
  * @description
- * @author Zhixing Zheng
- * @date 29/11/2021
+ * @author XMengling
+ * @date 03/29/2023
  * @export
  * @param {COMMON_FUNCTION} 需要节流的函数
  * @param {number} 延迟
