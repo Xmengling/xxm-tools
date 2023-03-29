@@ -21,7 +21,7 @@
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
-  "gitHead": "eea25d6631e9249d3b54408ac9d5f5f39901721d",
+  "gitHead": "1747c06fdcfec8151ecd098d2a1bc334733801ef",
   "dependencies": {
     "dayjs": "^1.10.7"
   }
