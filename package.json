@@ -1,5 +1,5 @@
 {
-  "name": "hub-utils1",
+  "name": "hub-utils",
   "version": "0.1.0",
   "workspaces": [
     "packages/*"

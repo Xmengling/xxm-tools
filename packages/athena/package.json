@@ -1,5 +1,5 @@
 {
-  "name": "hub-utils1",
+  "name": "hub-utils",
   "version": "1.1.10",
   "description": "leyo tools",
   "author": "leyowebteam <leyowebteam@leyopharm.com>",
@@ -20,10 +20,10 @@
   },
   "scripts": {},
   "dependencies": {
-    "@hub-utils1/date": "^1.1.10",
-    "@hub-utils1/js": "^1.1.9",
-    "@hub-utils1/number": "^1.1.9",
-    "@hub-utils1/validate": "^1.1.9"
+    "@hub-utils/date": "^1.1.10",
+    "@hub-utils/js": "^1.1.9",
+    "@hub-utils/number": "^1.1.9",
+    "@hub-utils/validate": "^1.1.9"
   },
   "gitHead": "1747c06fdcfec8151ecd098d2a1bc334733801ef"
 }
