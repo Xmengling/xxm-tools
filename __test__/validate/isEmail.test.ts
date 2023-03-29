@@ -1,6 +1,5 @@
 /* eslint-disable no-restricted-syntax */
 // /* eslint-disable prettier/prettier */
-// const validate = require('@athena/validate');
 import { isEmail } from '../../packages/validate/src/isEmail';
 
 test('2340sderds@163.com', () => {

@@ -42,7 +42,7 @@
     "build:min": "node ./build/build.min.js",
     "build:watch": "node ./build/build.watch.js",
     "clean": "rimraf ./packages/*/dist",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -t athena@ && git add CHANGELOG.md && git commit -m \"docs: update changelog\"",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -t hub-utils@ && git add CHANGELOG.md && git commit -m \"docs: update changelog\"",
     "test": "jest",
     "test:watch": "jest --watchAll",
     "coverage": "jest --coverage"

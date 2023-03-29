@@ -42,7 +42,7 @@ function getWebpackConfig(path, entry, options = {}) {
       filename: '[name].js',
       library: {
         type: 'umd',
-        name: 'athena',
+        name: 'all',
       },
       globalObject: 'this',
     },

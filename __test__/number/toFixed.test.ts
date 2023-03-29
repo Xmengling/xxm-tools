@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/no-loss-of-precision */
 /* eslint-disable prettier/prettier */
-// const { toFixed } = require('@athena/number');
 import { toFixed } from '../../packages/number/src/toFixed'
 
 test('带多位小数的零', () => {
