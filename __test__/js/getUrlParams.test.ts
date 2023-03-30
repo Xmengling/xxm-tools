@@ -8,11 +8,11 @@ test('正常参数', () => {
 });
 
 test('空字符串', () => {
-  expect(() => getUrlParams('')).toThrow(Error);
+  expect(() => getUrlParams('')).toThrow('Parameter "url" cannot be empty.');
 });
 
 test('无参数链接', () => {
-  expect(getUrlParams('https://www.google.com')).toEqual(null);
+  expect(getUrlParams('https://www.google.com')).toEqual({});
 });
 
 test('参数中有特殊字符', () => {

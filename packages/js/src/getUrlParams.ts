@@ -15,7 +15,7 @@ export function getUrlParams(url: string): URL_RESULT {
     throw typeError;
   }
   if (!url) {
-    throw new TypeError('url is required.');
+    throw new TypeError('Parameter "url" cannot be empty.');
   }
 
   const res: URL_RESULT = {};
