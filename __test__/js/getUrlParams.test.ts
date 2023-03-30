@@ -1,4 +1,4 @@
-import { getUrlParams } from '../../packages/js/dist/main';
+import { getUrlParams } from '../../packages/js/src/getUrlParams';
 
 test('正常参数', () => {
   expect(getUrlParams('https://www.example.com/?id=123&name=test')).toEqual({
