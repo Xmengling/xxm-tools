@@ -14,22 +14,25 @@ export function getUrlParams(url: string): URL_RESULT {
     const typeError = new TypeError('Parameter 1 is not a string');
     throw typeError;
   }
+  if (!url) {
+    throw new TypeError('url is required.');
+  }
+
   const res: URL_RESULT = {};
-  const queryArray = url.split('?');
-  const queryString: string | undefined = queryArray[1] || queryArray[0];
-  if (queryString) {
-    const queryParams: string[] = queryString.split('&');
-    queryParams.forEach((item) => {
-      const keyIndex: number = item.indexOf('=');
-      const key: string = item.substring(0, keyIndex);
-      const value: string = item.substring(keyIndex + 1);
-      res[key] = value;
-    });
+  const [baseUrl, queryString = ''] = url.split('?');
+  // 无参数
+  if (!queryString) {
+    return res;
+  }
+  /* eslint-disable no-restricted-syntax */
+  for (const queryParam of queryString.split('&')) {
+    const [key, value] = queryParam.split('=').map(decodeURIComponent);
+    res[key] = value;
   }
   return res;
 }
 
-declare interface URL_RESULT {
+interface URL_RESULT {
   [prop: string]: string;
 }
 

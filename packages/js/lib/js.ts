@@ -10,9 +10,6 @@ import { exportExcelJson } from '../src/exportExcelJson';
 import { debounce } from '../src/debounce';
 import { throttle } from '../src/throttle';
 import { getUrlParams } from '../src/getUrlParams';
-import { openNewTab } from '../src/openNewTab';
-import { scrollToTop } from '../src/scrollToTop';
-import { setDocumentTitle } from '../src/setDocumentTitle';
 import convertEmpties from '../src/convertEmpties';
 import getValueByPath from '../src/getValueByPath';
 import isEqual from '../src/isEqual';
@@ -33,9 +30,6 @@ export {
   debounce,
   throttle,
   getUrlParams,
-  openNewTab,
-  scrollToTop,
-  setDocumentTitle,
   convertEmpties,
   getValueByPath,
   isEqual,
@@ -57,9 +51,6 @@ const js = {
   debounce,
   throttle,
   getUrlParams,
-  openNewTab,
-  scrollToTop,
-  setDocumentTitle,
   convertEmpties,
   getValueByPath,
   isEqual,
