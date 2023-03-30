@@ -20,6 +20,8 @@ export function useCopy(text: string) {
   }
 }
 
+console.log('useCopy', useCopy('123'));
+
 export default {
   useCopy,
 };

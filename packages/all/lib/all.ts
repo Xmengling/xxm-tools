@@ -32,6 +32,7 @@ import {
   isEqual,
   uniq,
   regexp,
+  useCopy,
 } from '../../js/lib/js';
 
 import {
@@ -89,6 +90,7 @@ export {
   isZhEn,
   isZhP,
   toUpperCase,
+  useCopy,
 };
 
 const athena = {
@@ -132,6 +134,7 @@ const athena = {
   isZhEn,
   isZhP,
   toUpperCase,
+  useCopy,
 };
 
 export default athena;

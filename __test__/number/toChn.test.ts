@@ -62,12 +62,8 @@ test('瀿鷉', () => {
   expect(toChn('瀿鷉')).toStrictEqual('--');
 });
 test('9007199254740993', () => {
-  expect(() => toChn('9007199254740993')).toThrow(
-    Error
-  );
+  expect(() => toChn('9007199254740993')).toThrow(Error);
 });
 test('-9007199254740999', () => {
-  expect(() => toChn('-9007199254740999')).toThrow(
-    Error
-  );
+  expect(() => toChn('-9007199254740999')).toThrow(Error);
 });
