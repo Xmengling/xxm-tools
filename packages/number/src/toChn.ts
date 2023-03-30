@@ -7,13 +7,12 @@
  * toChn(123)
  * // => 一百二十三
  */
-import { isInt } from './isInt'
-import { isInvalidAccParam } from '../../js/utils/common'
+import { isInt } from './isInt';
+import { isInvalidAccParam } from '../../js/utils/common';
 
 export function toChn(num?: number | string): string {
-
   const reg = /-?[0-9]+.?[0-9]*/;
-  const isNum = reg.test(String(num)) // 是否数字
+  const isNum = reg.test(String(num)); // 是否数字
 
   // 非数字
   if (!isNum) {
@@ -24,28 +23,28 @@ export function toChn(num?: number | string): string {
   if (Number(num) === 0) {
     return '零';
   }
-  
+
   // 超出了临界值
-  if(isInvalidAccParam(num)) {
-    throw new Error('该数字超出了临界值')
+  if (isInvalidAccParam(num)) {
+    throw new Error('该数字超出了临界值');
   }
 
   // 是否负数
-  const isNegtive = (num < 0)
-  if(isNegtive) {
-    num = Math.abs(Number(num))
+  const isNegtive = num < 0;
+  if (isNegtive) {
+    num = Math.abs(Number(num));
   }
 
   // 是小数：拆分整数部分和小数部分
-  let intPart
-  let decimalPart
-  if(!isInt(num)) {
-    const numSplit = num.toString().split('.')
-    intPart = numSplit[0]
-    decimalPart = numSplit[1]
+  let intPart;
+  let decimalPart;
+  if (!isInt(num)) {
+    const numSplit = num.toString().split('.');
+    intPart = numSplit[0];
+    decimalPart = numSplit[1];
   } else {
-    intPart = num
-    decimalPart = 0
+    intPart = num;
+    decimalPart = 0;
   }
 
   const arr1 = ['零', '一', '二', '三', '四', '五', '六', '七', '八', '九'];
@@ -70,7 +69,7 @@ export function toChn(num?: number | string): string {
   ]; // 可继续追加更高位转换值
 
   // 处理整数部分
-  let intResult = ''
+  let intResult = '';
   const initArray = intPart.toString().split('');
   for (let i = 0; i < initArray.length; i += 1) {
     const des_i = initArray.length - 1 - i; // 倒序排列设值
@@ -92,23 +91,23 @@ export function toChn(num?: number | string): string {
   intResult = intResult.replace(/^一十/g, '十');
 
   // 处理小数部分
-  let decimalResult = ''
-  if(decimalPart > 0) {
+  let decimalResult = '';
+  if (decimalPart > 0) {
     const decimalArray = decimalPart.toString().split('');
     for (let i = 0; i < decimalArray.length; i += 1) {
-      const num = decimalArray[i]
-      decimalResult = decimalResult + arr1[num]; // 具体数字对应的中文
+      const num = decimalArray[i];
+      decimalResult += arr1[num]; // 具体数字对应的中文
     }
   }
 
   // 拼接结果
-  let result = intResult
+  let result = intResult;
   // 如果是小数，则补上小数位
-  if(decimalPart > 0) {
-    result = `${result}点${decimalResult}`
+  if (decimalPart > 0) {
+    result = `${result}点${decimalResult}`;
   }
   // 如果是负数，则补个负字
-  if(isNegtive) {
+  if (isNegtive) {
     return `负${result}`;
   }
   return `${result}`;

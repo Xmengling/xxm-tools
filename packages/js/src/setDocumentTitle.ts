@@ -17,18 +17,11 @@
  */
 
 export function setDocumentTitle(doc: Document, title: string) {
-
   // eslint-disable-next-line no-param-reassign
 
   doc.title = title;
-
 }
 
-
-
 export default {
-
   setDocumentTitle,
-
 };
-

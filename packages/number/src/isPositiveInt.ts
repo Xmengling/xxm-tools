@@ -12,17 +12,11 @@
 
  */
 
-
-
 export function isPositiveInt(num?: number | string): RegExp | boolean {
-
   const reg = /^[1-9]\d*$/;
 
   return reg.test(`${num}`);
-
 }
-
-
 
 // 例子
 
@@ -30,15 +24,8 @@ export function isPositiveInt(num?: number | string): RegExp | boolean {
 
 // console.log(reg.test('15'))
 
-
-
 // console.log(isPositiveInt('15.5'))
 
-
-
 export default {
-
   isPositiveInt,
-
 };
-

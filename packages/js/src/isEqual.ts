@@ -1,7 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-
-
 /**
 
  * 判断相等
@@ -63,42 +61,28 @@
  */
 
 export function isEqual(...args): boolean {
-
   let elements = args;
 
   if (args.length < 2) {
-
     const arg1 = args[0];
 
     if (Array.isArray(arg1)) {
-
       if (arg1.length < 2) {
-
         throw new TypeError('数组元素个数不能少于1');
-
       }
 
       elements = arg1;
-
     } else {
-
       throw new TypeError('参数类型有误');
-
     }
-
   }
 
   const firstItem = elements[0];
 
   return elements.slice(1).every((item) => {
-
     return valueEqual(firstItem, item);
-
   });
-
 }
-
-
 
 /**
 
@@ -113,41 +97,30 @@ export function isEqual(...args): boolean {
  */
 
 function valueEqual(arg1: any, arg2: any): boolean {
-
   const type1 = typeof arg1;
 
   const bool = type1 === typeof arg2;
 
   if (!bool) {
-
     return false;
-
   }
 
   if (type1 === 'object' && Array.isArray(arg1) !== Array.isArray(arg2)) {
-
     return false;
-
   }
 
   const type = typeof arg1;
 
   switch (type) {
-
     case 'object': // object/array/null
-
       return objectEqual(arg1, arg2);
 
     case 'function':
-
       return strictEqual(arg1, arg2);
 
     default:
-
       return strictEqual(arg1, arg2);
-
   }
-
 }
 
 /**
@@ -163,9 +136,7 @@ function valueEqual(arg1: any, arg2: any): boolean {
  */
 
 function strictEqual(arg1, arg2): boolean {
-
   return arg1 === arg2;
-
 }
 
 /**
@@ -181,11 +152,8 @@ function strictEqual(arg1, arg2): boolean {
  */
 
 function objectEqual(arg1: OBJECT_LIKE, arg2: OBJECT_LIKE): boolean {
-
   if (arg1 === null || arg2 === null) {
-
     return strictEqual(arg1 as null, arg2 as null);
-
   }
 
   const isSameObject = strictEqual(arg1, arg2);
@@ -193,26 +161,16 @@ function objectEqual(arg1: OBJECT_LIKE, arg2: OBJECT_LIKE): boolean {
   if (isSameObject) return true;
 
   return Object.entries(arg1).every(([key, value1]) => {
-
     const value2 = arg2[key];
 
     return valueEqual(value1, value2);
-
   });
-
 }
-
-
 
 // object/array
 
 type OBJECT_LIKE = {
-
   [x: string | number]: any;
-
 };
 
-
-
 export default isEqual;
-

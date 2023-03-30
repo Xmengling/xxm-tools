@@ -12,21 +12,13 @@
 
  */
 
-
-
 export function isNumber(num?: number | string): RegExp | boolean {
-
   const reg = /^-?\d*.?\d+$/;
 
   return reg.test(`${num}`);
-
 }
 
-
-
 // 例子
-
-
 
 // console.log(isNumber(-15))
 
@@ -50,11 +42,6 @@ export function isNumber(num?: number | string): RegExp | boolean {
 
 // console.log(isNumber('-0.55r'))
 
-
-
 export default {
-
   isNumber,
-
 };
-

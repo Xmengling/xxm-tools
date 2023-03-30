@@ -8,15 +8,15 @@
  */
 export function useCopy(text: string) {
   try {
-    let input = document.createElement('input')
-    input.value = text
-    document.body.appendChild(input)
-    input.select()
-    document.execCommand('copy')
-    document.body.removeChild(input)
-    return true
+    const input = document.createElement('input');
+    input.value = text;
+    document.body.appendChild(input);
+    input.select();
+    document.execCommand('copy');
+    document.body.removeChild(input);
+    return true;
   } catch (error) {
-    return false
+    return false;
   }
 }
 
