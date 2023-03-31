@@ -12,10 +12,11 @@ import { checkDataType } from './checkDataType';
 export function debounce(func: COMMON_FUNCTION, delay = 350): COMMON_FUNCTION {
   const fnIsFunction = checkDataType(func, 'function');
   if (!fnIsFunction) {
-    const typeError: TypeError = new TypeError(
-      'Parameter 1 is not a function!',
-    );
-    throw typeError;
+    throw new TypeError('Parameter 1 is not a function!');
+  }
+
+  if (delay <= 0) {
+    return func;
   }
 
   let timer: NodeJS.Timeout | null = null;
