@@ -27,7 +27,6 @@ import {
 } from '../../js/lib/js';
 
 import {
-  isApprNo,
   isEmail,
   isIdentityCard,
   isLocCode,
@@ -61,7 +60,6 @@ export {
   isEqual,
   uniq,
   regexp,
-  isApprNo,
   isEmail,
   isIdentityCard,
   isLocCode,
@@ -96,7 +94,6 @@ const athena = {
   isEqual,
   uniq,
   regexp,
-  isApprNo,
   isEmail,
   isIdentityCard,
   isLocCode,
