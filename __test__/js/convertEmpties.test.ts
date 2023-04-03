@@ -1,4 +1,5 @@
-import { convertEmpties } from '../../packages/js/dist/main';
+// import { convertEmpties } from '../../packages/js/dist/main';
+import { convertEmpties } from '../../packages/js/src/convertEmpties';
 
 test('值为空字符串的情况', () => {
   expect(convertEmpties({ name: '' }, { key: 'name' })).toStrictEqual({
@@ -148,4 +149,20 @@ test('控制对象递归层级数量', () => {
     },
   };
   expect(convertEmpties(data, { key: 'name', level: 2 })).toStrictEqual(result);
+});
+
+test('不指定key', () => {
+  expect(convertEmpties({ name: '123', age: '' })).toStrictEqual({
+    name: '123',
+    age: '-',
+  });
+});
+
+test('不指定key, undefined, null, ""替换值为null', () => {
+  expect(
+    convertEmpties({ name: '123', age: '' }, { replacer: null }),
+  ).toStrictEqual({
+    name: '123',
+    age: null,
+  });
 });
