@@ -1,4 +1,3 @@
-import { checkDataType } from '../src/checkDataType';
 import { getDevice } from '../src/getDevice';
 import { exportExcelBlob } from '../src/exportExcelBlob';
 import { exportExcelJson } from '../src/exportExcelJson';
@@ -13,7 +12,6 @@ import regexp from '../src/regexp';
 import { useCopy } from '../src/useCopy';
 
 export {
-  checkDataType,
   getDevice,
   exportExcelBlob,
   exportExcelJson,
@@ -29,7 +27,6 @@ export {
 };
 
 const js = {
-  checkDataType,
   getDevice,
   exportExcelBlob,
   exportExcelJson,

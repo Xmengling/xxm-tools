@@ -12,7 +12,6 @@ import {
 import { getTimeRange } from '../../date/lib/date';
 
 import {
-  checkDataType,
   getDevice,
   exportExcelBlob,
   exportExcelJson,
@@ -51,7 +50,6 @@ export {
   isInt,
   toFixed,
   getTimeRange,
-  checkDataType,
   getDevice,
   exportExcelBlob,
   exportExcelJson,
@@ -87,7 +85,6 @@ const athena = {
   isInt,
   toFixed,
   getTimeRange,
-  checkDataType,
   getDevice,
   exportExcelBlob,
   exportExcelJson,
