@@ -10,6 +10,7 @@ import isEqual from '../src/isEqual';
 import uniq from '../src/uniq';
 import regexp from '../src/regexp';
 import { useCopy } from '../src/useCopy';
+import fileSize from '../src/fileSize'
 
 export {
   getDevice,
@@ -24,6 +25,7 @@ export {
   uniq,
   regexp,
   useCopy,
+  fileSize,
 };
 
 const js = {
@@ -39,5 +41,6 @@ const js = {
   uniq,
   regexp,
   useCopy,
+  fileSize,
 };
 export default js;

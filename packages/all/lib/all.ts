@@ -24,12 +24,12 @@ import {
   uniq,
   regexp,
   useCopy,
+  fileSize,
 } from '../../js/lib/js';
 
 import {
   isEmail,
   isIdentityCard,
-  isLocCode,
   isMobilePhone,
   isTel,
   isValidPassword,
@@ -62,7 +62,6 @@ export {
   regexp,
   isEmail,
   isIdentityCard,
-  isLocCode,
   isMobilePhone,
   isTel,
   isValidPassword,
@@ -71,6 +70,7 @@ export {
   isZhP,
   toUpperCase,
   useCopy,
+  fileSize,
 };
 
 const athena = {
@@ -96,7 +96,6 @@ const athena = {
   regexp,
   isEmail,
   isIdentityCard,
-  isLocCode,
   isMobilePhone,
   isTel,
   isValidPassword,
@@ -105,6 +104,7 @@ const athena = {
   isZhP,
   toUpperCase,
   useCopy,
+  fileSize,
 };
 
 export default athena;
