@@ -1,8 +1,6 @@
-import { uniq } from '../../packages/js/dist/main';
+// import { uniq } from '../../packages/js/dist/main';
+import { uniq } from '../../packages/js/src/uniq';
 
-test('空', () => {
-  expect(uniq()).toStrictEqual([]);
-});
 test('空', () => {
   expect(uniq(undefined as unknown as unknown[])).toStrictEqual([]);
 });

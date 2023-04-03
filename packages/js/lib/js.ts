@@ -1,9 +1,4 @@
 import { checkDataType } from '../src/checkDataType';
-import { deepClone } from '../src/deepClone';
-import { accAdd } from '../src/accAdd';
-import { accSub } from '../src/accSub';
-import { accMul } from '../src/accMul';
-import { accDiv } from '../src/accDiv';
 import { getDevice } from '../src/getDevice';
 import { exportExcelBlob } from '../src/exportExcelBlob';
 import { exportExcelJson } from '../src/exportExcelJson';
@@ -19,11 +14,6 @@ import { useCopy } from '../src/useCopy';
 
 export {
   checkDataType,
-  deepClone,
-  accAdd,
-  accSub,
-  accMul,
-  accDiv,
   getDevice,
   exportExcelBlob,
   exportExcelJson,
@@ -40,11 +30,6 @@ export {
 
 const js = {
   checkDataType,
-  deepClone,
-  accAdd,
-  accSub,
-  accMul,
-  accDiv,
   getDevice,
   exportExcelBlob,
   exportExcelJson,

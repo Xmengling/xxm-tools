@@ -1,5 +1,17 @@
 import isEqual from './isEqual';
 
+// 常用的空值
+const COMMON_TARGET = [undefined, null, ''];
+
+type ConvertOption = {
+  key?: string | string[];
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  replacer?: string | ((value: any) => string);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  target?: any[];
+  level?: number;
+};
+
 // 重载1 源数据是object类型
 function convertEmpties<T extends object>(
   object: T,
@@ -60,15 +72,12 @@ function convertEmpties<T extends object, K extends T | T[]>(
   replaceHandler: ReturnType<typeof replaceBy>,
   cache: Set<K>,
 ): K {
-  if (!option) {
-    option = {};
-  } // 未传option
   const {
     key = '',
     replacer = '-',
     target = COMMON_TARGET,
     level = Infinity,
-  } = option;
+  } = option ?? {};
 
   const set = cache || new Set();
   if (set.has(source)) return source; // 处理循环引用
@@ -132,7 +141,7 @@ function replaceBy(replacer: ConvertOption['replacer']) {
     let finalReplacer = replacer;
     if (typeof replacer === 'function') {
       try {
-        finalReplacer = replacer(value, sourceObject);
+        finalReplacer = replacer(value);
       } catch (error) {
         console.warn('[option.replacer]运行错误', error);
         finalReplacer = value; // 保留旧值
@@ -142,19 +151,8 @@ function replaceBy(replacer: ConvertOption['replacer']) {
   };
 }
 
-// 常用的空值
-const COMMON_TARGET = [undefined, null, ''];
-
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-type ReplacerFunc = (value: any, parent: object) => any;
-
-type ConvertOption = {
-  key?: string | string[];
-  replacer?: string | ReplacerFunc;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  target?: any[];
-  level?: number;
-};
+// type ReplacerFunc = (value: any, parent: object) => any;
 
 export { convertEmpties };
 export default convertEmpties;
