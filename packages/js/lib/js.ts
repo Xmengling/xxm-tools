@@ -10,7 +10,8 @@ import isEqual from '../src/isEqual';
 import uniq from '../src/uniq';
 import regexp from '../src/regexp';
 import { useCopy } from '../src/useCopy';
-import fileSize from '../src/fileSize'
+import fileSize from '../src/fileSize';
+import {getFingerprint} from '../src/getFingerprint';
 
 export {
   getDevice,
@@ -26,6 +27,7 @@ export {
   regexp,
   useCopy,
   fileSize,
+  getFingerprint,
 };
 
 const js = {
@@ -42,5 +44,6 @@ const js = {
   regexp,
   useCopy,
   fileSize,
+  getFingerprint,
 };
 export default js;

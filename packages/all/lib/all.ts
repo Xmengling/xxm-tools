@@ -24,6 +24,7 @@ import {
   regexp,
   useCopy,
   fileSize,
+  getFingerprint,
 } from '../../js/lib/js';
 
 import {
@@ -69,6 +70,7 @@ export {
   toUpperCase,
   useCopy,
   fileSize,
+  getFingerprint,
 };
 
 const athena = {
@@ -102,6 +104,7 @@ const athena = {
   toUpperCase,
   useCopy,
   fileSize,
+  getFingerprint,
 };
 
 export default athena;
