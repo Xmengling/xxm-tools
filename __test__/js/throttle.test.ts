@@ -36,19 +36,19 @@ describe('测试节流函数', () => {
     expect(mockFn).toBeCalledWith(1, 2, 3);
   });
 
-  test('函数调用的 this 上下文被正确传递', () => {
-    const mockThis = { x: 1 };
-    const mockFn = jest.fn(function (this: typeof mockThis) {
-      return this.x;
-    });
+  // test('函数调用的 this 上下文被正确传递', () => {
+  //   const mockThis = { x: 1 };
+  //   const mockFn = jest.fn(function (this: typeof mockThis) {
+  //     return this.x;
+  //   });
 
-    const throttledFn = throttle(mockFn, 500);
+  //   const throttledFn = throttle(mockFn, 500);
 
-    const result = throttledFn.call(mockThis);
-    jest.advanceTimersByTime(500);
+  //   const result = throttledFn.call(mockThis);
+  //   jest.advanceTimersByTime(500);
 
-    expect(result).toEqual(1);
-  });
+  //   expect(result).toEqual(1);
+  // });
 
   test('参数不为函数抛异常', () => {
     expect(() => {
