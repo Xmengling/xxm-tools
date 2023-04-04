@@ -1,6 +1,6 @@
 {
   "name": "@hub-utils/js",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "js utils",
   "author": "leyowebteam <leyowebteam@leyopharm.com>",
   "homepage": "",
@@ -24,8 +24,8 @@
   "gitHead": "1747c06fdcfec8151ecd098d2a1bc334733801ef",
   "dependencies": {
     "file-saver": "^2.0.5",
-    "xlsx": "^0.18.5",
-    "fingerprintjs2": "^2.1.4"
+    "fingerprintjs2": "^2.1.4",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "script-loader": "^0.7.2"
