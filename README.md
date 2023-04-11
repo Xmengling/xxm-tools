@@ -1,4 +1,4 @@
-# athena
+# hub-utils
 
 ## 常用脚本
 ```
@@ -66,7 +66,7 @@ yarn workspace <workspace_name> <command> // 对子包执行命令
 yarn add mathjs --dev -W // 根目录安装
 ```
 ```
-athena
+hub-utils
 ├─ .eslintignore
 ├─ .eslintrc.js
 ├─ .gitignore
@@ -81,12 +81,12 @@ athena
 ├─ tsconfig.json
 ├─ webpack.config.js
 └─ packages
-   ├─ athena
+   ├─ all
    │  ├─ dist
    │  │  ├─ main.d.ts
    │  │  └─ main.js
    │  └─ lib
-   │     └─ athena.ts
+   │     └─ all.ts
    └─ number
       ├─ dist
       │  ├─ main.d.ts
@@ -101,4 +101,4 @@ athena
 ```
 
 ## 文档
-https://www.yuque.com/leyoweb/athena
+https://www.yuque.com/xiaoxiaomeng-5n4tl/cm3b3f
